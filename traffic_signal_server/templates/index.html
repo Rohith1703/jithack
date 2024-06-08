@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Healthcare Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('add_patient') }}">Add Patient Details</a></li>
+                <li><a href="{{ url_for('add_blood_donor') }}">Add Blood Donor</a></li>
+                <li><a href="{{ url_for('doctor_consultation') }}">Doctor Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to the Healthcare Management System</h2>
+        <p>Use the navigation menu to manage patient details, add blood donors, or consult with doctors.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Healthcare Management System</p>
+    </footer>
+</body>
+</html>

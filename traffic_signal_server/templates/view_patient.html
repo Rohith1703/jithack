@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Patient Details</title>
+</head>
+<body>
+    <h1>Patient Details</h1>
+    <p><strong>Name:</strong> {{ patient['name'] }}</p>
+    <p><strong>Age:</strong> {{ patient['age'] }}</p>
+    <p><strong>Condition:</strong> {{ patient['condition'] }}</p>
+    <p><strong>Details:</strong> {{ patient['details'] }}</p>
+    <p><strong>Emergency Time:</strong> {{ patient['emergencyTime'] }}</p>
+    <p><a href="{{ url_for('edit_patient') }}">Edit Details</a></p>
+</body>
+</html>

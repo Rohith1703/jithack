@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Consultation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Doctor Consultation</h1>
+    <form action="/submit_consultation" method="POST">
+        <label for="patient_name">Patient Name:</label><br>
+        <input type="text" id="patient_name" name="patient_name" required><br><br>
+
+        <label for="doctor_name">Doctor Name:</label><br>
+        <input type="text" id="doctor_name" name="doctor_name" required><br><br>
+
+        <label for="consultation_date">Consultation Date:</label><br>
+        <input type="date" id="consultation_date" name="consultation_date" required><br><br>
+
+        <label for="consultation_notes">Consultation Notes:</label><br>
+        <textarea id="consultation_notes" name="consultation_notes" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

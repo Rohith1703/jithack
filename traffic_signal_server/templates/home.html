@@ -1,0 +1,49 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="{{ url_for('static', filename='logo.png') }}" alt="Logo"></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li class="menu-icon">
+                <a href="#">&#9776;</a>
+                <ul class="dropdown">
+                    <li><a href="#">Patient Details</a></li>
+                    <li><a href="#">Donor Details</a></li>
+                    <li><a href="#">Doctor Consultation</a></li>
+                    <li><a href="#">Contact Center</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to the EmergencyCareHub</h1>
+        <p>Manage patient data efficiently and securely.</p>
+    </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Our system helps healthcare providers manage patient data with ease.</p>
+        </section>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Secure data storage</li>
+                <li>Real-time updates</li>
+                <li>Easy access and management</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Patient Management System</p>
+    </footer>
+</body>
+</html>

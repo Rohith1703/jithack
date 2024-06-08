@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donors - {{ blood_group }}</title>
+</head>
+<body>
+    <h1>Blood Donors - {{ blood_group }}</h1>
+    <h2>Donors with Blood Group {{ blood_group }}:</h2>
+    <ul>
+        {% for donor in donors %}
+            <li>{{ donor }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
